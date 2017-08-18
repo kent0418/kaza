@@ -115,11 +115,7 @@
 	}else{
 		@ob_end_clean();
 		@ob_end_flush();
-		if(isset($_GET['imgur'])){
-			header("Content-Type:image/jpeg");
-			echo file_get_contents("https://i.imgur.com/$id.jpg");
-		}else{
-			include("share.php");
-		}
+		include("share.php");
+		exit;
 	}
 ?>
