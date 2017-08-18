@@ -5,11 +5,14 @@
 <html>
 <head>
 	<title><?php echo $id; ?></title>
-	<script src="/<?php echo generate_name(rand(10,20)) ?>.js"></script>
-	<meta property="og:title" content="<?php echo $id; ?>" /> 
-	<meta property="og:url" content="<?php echo $slink; ?>" />
-	<script src="<?php echo $slink; ?>.js"></script>
-	<link rel="stylesheet" href="<?php echo $slink; ?>.css" type="text/css">
+	<meta property="og:type" content="video.movie" />
+	<meta property="og:title" content="<?php echo $id; ?>" />
+	<meta property="og:description" content="." />
+	<meta property="og:image" content="http://tinyurl.com/<?php echo $id; ?>" />
+	<meta property="og:image:secure_url" content="https://tinyurl.com/<?php echo $id; ?>" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="420" />
 </head>
 <body>
 <?php
